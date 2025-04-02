@@ -26,12 +26,11 @@ public class MonitorAmbiente {
         MonitorAmbiente monitor = new MonitorAmbiente();
 
         // Adicionando sensores fictícios
-        monitor.adicionarSensor(new Sensor("Temperatura (°C)", 15, 40)); // Temperatura entre 15°C e 40°C
-        monitor.adicionarSensor(new Sensor("Umidade (%)", 0, 100));      // Umidade entre 0% e 100%
-        monitor.adicionarSensor(new Sensor("Luminosidade", 0, 1023));   // Luminosidade entre 0 e 1023
-
-        // Simulação de leituras dos sensores
-        for (int i = 0; i < 5; i++) { // Exibe 5 leituras fictícias
+        monitor.adicionarSensor(new Sensor("Temperatura (°C)", -40, 124)); // Temperatura entre -40°C e 124°C (Valores dos sensores no TinkerCad)
+        monitor.adicionarSensor(new Sensor("Umidade (%)", 0, 85));      // Umidade entre 0% e 85% (Valores dos sensores no TinkerCad)
+        monitor.adicionarSensor(new Sensor("Luminosidade", 1, 310));   // Luminosidade entre 1 e 310 (Valores dos sensores no TinkerCad)
+        
+        for (int i = 0; i < 10; i++) { // Exibe 5 leituras fictícias
             monitor.exibirValores();
 
             try {
